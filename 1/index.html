@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <link rel="stylesheet" href="./style.css" />
+
+  <body>
+    <div class="formdiv">
+      <form class="form" onsubmit="return formSubmit()">
+        <label for="fname">First Name</label>
+        <input
+          class="myinput"
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+          minlength="3"
+          required
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          class="myinput"
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+          minlength="3"
+          required
+        />
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="textarea">Subject</label>
+        <textarea
+          class="textarea"
+          name="subject"
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="Write something..."
+        ></textarea>
+
+        <button class="btn" type="submit">submit</button>
+      </form>
+    </div>
+    <div class="overlay"></div>
+    <div class="popup">
+      <div class="content">
+        <p>Your information was successfully registered!</p>
+      </div>
+    </div>
+    <script src="./1.js"></script>
+  </body>
+</html>

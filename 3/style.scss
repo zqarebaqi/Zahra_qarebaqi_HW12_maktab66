@@ -1,0 +1,9 @@
+@use "sass:math";
+
+@mixin padding($x, $y, $pseudo: false) {
+  padding-top: math.div($x, $y) * 100%;
+  width: 100%;
+}
+.class {
+  @include padding(300px, 960px);
+}
